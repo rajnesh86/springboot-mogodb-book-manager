@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: Book Manager
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/bookdb
+      database: bookdb
+server:
+  port: 8080
+
