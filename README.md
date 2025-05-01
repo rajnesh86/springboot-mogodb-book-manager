@@ -18,6 +18,35 @@ Download and install MongoDB Compass from the official website:
 
 **    Step 3: Connect Using MongoDB Compass**
   Open MongoDB Compass
-  Click "New Connection"
+  Click "New Connection."
   **Enter this connection string:** mongodb://admin:password@localhost:27017
-  Click "Connect"
+  Click "Connect."
+
+**API for Testing**
+**Post** : http://localhost:8080/books
+          {
+    "title": "Effective Java",
+    "isbn": "3334445556",
+    "price": 54.95,
+    "author": {
+        "name": "Joshua Bloch",
+        "publisher": {
+            "name": "Addison-Wesley",
+            "address": {
+                "street": "75 Arlington St",
+                "city": "Boston",
+                "zipcode": "02116",
+                "country": {
+                    "name": "USA",
+                    "code": "US",
+                    "continent": {
+                        "name": "North America",
+                        "hemisphere": "Western"
+                    }
+                }
+            }
+        }
+    }
+}
+
+
